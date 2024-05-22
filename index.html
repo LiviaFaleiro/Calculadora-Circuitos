@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="style.css">
+    <title>Calculo Circuito</title>
+</head>
+<body>
+    <h1 class="titulo">Calcular Circuitos</h1>
+    
+    <section class="main">
+
+        <h2 class="legenda">O que deseja calcular?</h2>
+        <button class="opcao" id="opcao1" onclick="corrente()">I(Corrente Elétrica)</button>
+        <button class="opcao" id="opcao2" onclick="tensao()">E(Tensão Elétrica)</button>
+        <button class="opcao" id="opcao3" onclick="resistencia()">R(Resistência)</button>
+        
+    </section>
+
+    <section class="corrente" style="display: none;">
+        <h3 class="botaoInserir"onclick="criarInputs()">Inserir Quantidade de Resistores(Clique Aqui!)</h3>
+        <div id="inputContainer"></div>
+        <div id="voltageContainer" style="display:none;">
+        <p id="somaResistor"></p>
+            <h3 id="tensaoTexto" style="display: none;" class="botaoInserir">Digite a Tensão Elétrica V/E</h3>
+            <input type="number" id="voltageInput" placeholder="Tensão (V/E)">
+        </div>
+        <p id="result"></p>
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

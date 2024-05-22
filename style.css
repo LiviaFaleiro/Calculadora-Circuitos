@@ -1,0 +1,56 @@
+body{
+    background-color: oldlace;
+}
+
+.titulo{
+    display: flex;
+    text-align: center;
+    color: rgb(99, 97, 146);
+    flex-direction: column;
+}
+.main{
+    flex-direction: column;
+    display: flex;
+    /*justify-content: center;*/
+    height: 50vh;
+   align-items: center;
+
+}
+.legenda{
+    display: flex;
+    text-align: center;
+    color: rgb(97, 146, 124);
+    flex-direction: column;
+    font-size: 20px;
+}
+.opcao {
+    height: 8vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+    background-color: rgb(255, 216, 223);
+    color: black;
+    border: 3px solid;
+    border-color: rgb(217, 255, 242);
+    margin: 5px;
+    border-radius: 5px;
+
+}
+.botaoInserir{
+   text-decoration: dashed palevioletred;
+   color: palevioletred;
+   cursor: pointer;
+}
+input{
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: rgb(217, 255, 242);
+    background-color: rgb(255, 216, 223);
+}
+input:hover{
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: rgb(217, 255, 242);
+    border-color: rgb(255, 216, 223);
+}
