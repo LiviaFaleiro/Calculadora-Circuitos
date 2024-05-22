@@ -9,6 +9,7 @@ let totalResistance = 0;
 function criarInputs() {
     // Solicita ao usuário a quantidade de resistências
     const numResistencias = prompt("Quantas resistências você deseja inserir?");
+    document.getElementById("legenda").style.display="none"
     
     // Converte a entrada para um número inteiro
     const quantidade = parseInt(numResistencias);
@@ -67,6 +68,7 @@ function criarInputs() {
     document.getElementById("tensaoTexto").style.display="block"
 }
 
+
 function calculateCurrent() {
     const voltageInput = document.getElementById("voltageInput");
     const voltage = parseFloat(voltageInput.value);
@@ -78,8 +80,12 @@ function calculateCurrent() {
         result.innerHTML = `A soma das resistências é: ${totalResistance} Ω. Por favor, insira um valor válido de tensão.`;
         return;
     }
-
     // Calcula a corrente usando a Lei de Ohm
     const current = voltage / totalResistance;
-    result.innerHTML = `A soma das resistências é: ${totalResistance} Ω.<br>A corrente é: ${current.toFixed(2)}<br>A com uma tensão de ${voltage} V.`;
+    result.innerHTML = `A soma das resistências é: ${totalResistance} Ω.<br>A corrente é: ${current.toFixed(2)} A<br>com uma tensão de ${voltage} V.`;
+    document.getElementById("CalculaNov").style.display="block"
+}
+
+function novamente(){
+document.getElementById("legenda").style.display="block"
 }

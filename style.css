@@ -37,6 +37,13 @@ body{
     border-radius: 5px;
 
 }
+.corrente{
+    flex-direction: column;
+    display: flex;
+    /*justify-content: center;*/
+    height: 50vh;
+   align-items: center;
+}
 .botaoInserir{
    text-decoration: dashed palevioletred;
    color: palevioletred;
@@ -47,10 +54,16 @@ input{
     border-radius: 5px;
     border-color: rgb(217, 255, 242);
     background-color: rgb(255, 216, 223);
+    height: 4vh;
+    width: 30vw;
+    margin: 5px;
 }
 input:hover{
+    height: 4vh;
+    width: 30vw;
     border: 3px solid;
     border-radius: 5px;
     background-color: rgb(217, 255, 242);
     border-color: rgb(255, 216, 223);
+
 }

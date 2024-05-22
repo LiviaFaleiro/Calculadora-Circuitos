@@ -18,15 +18,18 @@
         
     </section>
 
+    
     <section class="corrente" style="display: none;">
-        <h3 class="botaoInserir"onclick="criarInputs()">Inserir Quantidade de Resistores(Clique Aqui!)</h3>
+
+        <h3 class="botaoInserir"onclick="criarInputs()" class="legenda" id="legenda".style="display:block">Inserir Quantidade de Resistores(Clique Aqui!)</h3>
         <div id="inputContainer"></div>
         <div id="voltageContainer" style="display:none;">
         <p id="somaResistor"></p>
             <h3 id="tensaoTexto" style="display: none;" class="botaoInserir">Digite a Tensão Elétrica V/E</h3>
             <input type="number" id="voltageInput" placeholder="Tensão (V/E)">
         </div>
-        <p id="result"></p>
+        <p id="result" class="resultado"></p>
+        <button class="opcao" onclick="novamente()" id="CalculaNov" style="display: none;">Calcular novamente</button>
     </section>
 
 <script src="script.js"></script>
