@@ -18,12 +18,14 @@ body{
 }
 .legenda{
     display: flex;
-    text-align: center;
     color: rgb(97, 146, 124);
     flex-direction: column;
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
 .opcao {
+
     height: 8vh;
     width: 30vw;
     display: flex;
@@ -48,9 +50,15 @@ body{
    text-decoration: dashed palevioletred;
    color: palevioletred;
    cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 input{
     border: 3px solid;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     border-radius: 5px;
     border-color: rgb(217, 255, 242);
     background-color: rgb(255, 216, 223);
@@ -59,6 +67,7 @@ input{
     margin: 5px;
 }
 input:hover{
+    align-items: center;
     height: 4vh;
     width: 30vw;
     border: 3px solid;
@@ -66,4 +75,9 @@ input:hover{
     background-color: rgb(217, 255, 242);
     border-color: rgb(255, 216, 223);
 
+}
+.formula{
+    color: rgb(107, 177, 107);
+    font-size: 22px;
+    text-align: center;
 }

@@ -21,6 +21,7 @@
     
     <section class="corrente" style="display: none;">
 
+        <h2 class="formula">Fórmula para Calcular a corrente: Corrente(R) = Tensão(E)/Resistência(I)</h2>
         <h3 class="botaoInserir"onclick="criarInputs()" class="legenda" id="legenda".style="display:block">Inserir Quantidade de Resistores(Clique Aqui!)</h3>
         <div id="inputContainer"></div>
         <div id="voltageContainer" style="display:none;">
@@ -29,10 +30,22 @@
             <input type="number" id="voltageInput" placeholder="Tensão (V/E)">
         </div>
         <p id="result" class="resultado"></p>
-        <button class="opcao" onclick="novamente()" id="CalculaNov" style="display: none;">Calcular novamente</button>
+        <button class="opcao" onclick="novamente()" id="CalculaNov" style="display: none;">Novo Cálculo</button>
     </section>
 
-<script src="script.js"></script>
+    <section class="tensao" style="display: none;">
+        <br>
+        <h2 class="formula">Fórmula para calcular a tensão: Corrente(I) * Resistência(R) </h2>
+        <h3 class="botaoInserir">Digite a Corrente Elétrica(I)</h3>
+        <input type="number" id="ohmInput" placeholder="Corrente (I)">
+        <p id="correnteResultado"></p>
+    </section>
+
+<script src="JavaScript/corrente.js"></script>
+<script src="JavaScript/resistencia.js"></script>
+<script src="JavaScript/tensao.js"></script>
+<script src="JavaScript/script.js"></script>
+
 
 </body>
 </html>

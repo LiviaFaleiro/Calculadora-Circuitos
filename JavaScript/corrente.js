@@ -68,7 +68,6 @@ function criarInputs() {
     document.getElementById("tensaoTexto").style.display="block"
 }
 
-
 function calculateCurrent() {
     const voltageInput = document.getElementById("voltageInput");
     const voltage = parseFloat(voltageInput.value);
@@ -77,15 +76,11 @@ function calculateCurrent() {
 
     // Verifica se a tensão é um número válido
     if (isNaN(voltage)) {
-        result.innerHTML = `A soma das resistências é: ${totalResistance} Ω. Por favor, insira um valor válido de tensão.`;
+        result.innerHTML = `A resistência equivalente é ${totalResistance} Ω. Por favor, insira um valor válido de tensão.`;
         return;
     }
     // Calcula a corrente usando a Lei de Ohm
     const current = voltage / totalResistance;
-    result.innerHTML = `A soma das resistências é: ${totalResistance} Ω.<br>A corrente é: ${current.toFixed(2)} A<br>com uma tensão de ${voltage} V.`;
+    result.innerHTML = `A corrente é: ${current.toFixed(2)}A<br>A resistência equivalente é: ${totalResistance} Ω.<br>A tensão é ${voltage} V.`;
     document.getElementById("CalculaNov").style.display="block"
-}
-
-function novamente(){
-document.getElementById("legenda").style.display="block"
 }
