@@ -60,11 +60,11 @@ function criarInputs() {
     }
 
     const voltageInput = document.getElementById("voltageInput");
-    voltageInput.addEventListener('input', calculateCurrent);
+    voltageInput.addEventListener('input', calcularCorrente);
     document.getElementById("tensaoTexto").style.display="block"
 }
 
-function calculateCurrent() {
+function calcularCorrente() {
     const voltageInput = document.getElementById("voltageInput");
     const voltage = parseFloat(voltageInput.value);
 
