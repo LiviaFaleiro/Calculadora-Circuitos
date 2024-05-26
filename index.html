@@ -18,12 +18,12 @@
     <section class="main" style="display: none;">
 
         <h2 class="legenda">O que deseja calcular?</h2>
-        <button class="opcao" id="opcao1" onclick="corrente()">I(Corrente Elétrica)</button>
-        <button class="opcao" id="opcao2" onclick="tensao()">E(Tensão Elétrica)</button>
-        <button class="opcao" id="opcao3" onclick="resistencia()">R(Resistência)</button>
+        <button class="opcao" onclick="corrente()">I(Corrente Elétrica)</button>
+        <button class="opcao" onclick="tensao()">E(Tensão elétrica)</button>
+        <button class="opcao" onclick="resistencia()">R(Resistência)</button>
         
     </section>
-    
+
     <section class="corrente" style="display: none;">
 
         <h2 class="formula">Fórmula para Calcular a corrente: Corrente(R) = Tensão(E)/Resistência(I)</h2>
@@ -54,7 +54,7 @@
     </section>
 
     <section class="resistencia" style="display: none;">
-        <br>
+    
         <h2 class="formula">Fórmula para calcular a resistência: Tensão(E)/Corrente(I)</h2>
         <h3 class="botaoInserir">Digite a Tensão elétrica:</h3>
         <input type="number" id="tensaoInput" placeholder="Tensão (V/E)">

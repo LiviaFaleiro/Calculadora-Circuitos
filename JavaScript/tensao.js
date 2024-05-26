@@ -9,7 +9,7 @@ var res = 0;
 var current = 0
 correnteResultado = 0
 
-function tensao() {
+function tensao(){
     document.querySelector('.tensao').style.display = "block";
     document.querySelector('.main').style.display = "none";
 }
@@ -61,7 +61,7 @@ function criarInput(){
         inputCaixa.appendChild(document.createElement("br"));
     }
 
-}
+} //fecha criarinput
 
 function calcularTensao(){
     var voltage = parseFloat(voltageInput.value);
