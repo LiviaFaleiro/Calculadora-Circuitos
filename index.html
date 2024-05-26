@@ -31,9 +31,9 @@
         <h3 class="botaoInserir"onclick="criarInputs()" class="legenda" id="legenda".style="display:block">Inserir Quantidade de Resistores(Clique Aqui!)</h3>
         <div id="inputContainer"></div>
         <div id="voltageContainer" style="display:none;">
-        <p id="somaResistor"></p>
-            <h3 id="tensaoTexto" style="display: none;" class="botaoInserir">Digite a Tensão Elétrica V/E</h3>
-            <input type="number" id="voltageInput" placeholder="Tensão (V/E)">
+            <p id="somaResistor"></p>
+                <h3 id="tensaoTexto" style="display: none;" class="botaoInserir">Digite a Tensão Elétrica V/E</h3>
+                <input type="number" id="voltageInput" placeholder="Tensão (V/E)">
         </div>
         <p id="result" class="resultado"></p>
         <button class="opcao" onclick="novamente()" id="CalculaNov" style="display: none;">Novo Cálculo</button>
@@ -52,6 +52,19 @@
             <p id="soma"></p>
         </div>
         <p  id="resultado" class="resultado"></p>
+    </section>
+
+    <section class="resistencia" style="display: none;">
+        <br>
+        <h2 class="formula">Fórmula para calcular a resistência: Tensão(E)/Corrente(I)</h2>
+        <h3 class="botaoInserir">Digite a Tensão elétrica:</h3>
+        <input type="number" id="tensaoInput" placeholder="Tensão (V/E)">
+        <p id="tensaoRes"></p>
+        <h3 class="botaoInserir">Digite a corrente elétrica:</h3>
+        <input type="number" placeholder="Corrente (I)" id="correnteInput">
+        <p id="correnteRes"></p>
+        <button onclick="calcularResistencia()" class="calc">Calcular</button>
+        <P id="resultadoResistencia"></P>
     </section>
 
 <script src="JavaScript/corrente.js"></script>

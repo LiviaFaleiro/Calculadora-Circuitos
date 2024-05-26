@@ -81,3 +81,17 @@ input:hover{
     font-size: 22px;
     text-align: center;
 }
+.calc{
+    cursor: pointer;
+    height: 8vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+    background-color: rgb(255, 216, 223);
+    color: black;
+    border: 3px solid;
+    border-color: rgb(217, 255, 242);
+    margin: 5px;
+    border-radius: 5px;
+}
