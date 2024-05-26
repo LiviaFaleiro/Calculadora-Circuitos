@@ -48,9 +48,7 @@ function criarInput(){
                 res += value;
             }
         });
-        
-        soma.innerHTML = `A soma das resistências é: ${res} Ω`;
-        voltagem.style.display = 'block';
+    
     }
     
     for (let i = 0; i < quantidade; i++) {
