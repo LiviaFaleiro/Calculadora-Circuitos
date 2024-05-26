@@ -13,12 +13,12 @@ const resultado = document.getElementById("resultadoResistencia")
 const tensaoRes = document.getElementById("tensaoRes");
 const correnteRes = document.getElementById("correnteRes");
 
-const updateTensao = () => {
+const atualizarTensao = () => {
     tensaoTotal = parseFloat(tensaoInput.value);
     tensaoRes.innerHTML = `A tensão é de ${tensaoTotal}`;
 }
 
-const updateCorrente = () => {
+const atualizarCorrente = () => {
     correnteTotal = parseFloat(correnteInput.value);
     correnteRes.innerHTML = `A corrente é de ${correnteTotal}`;
 }
@@ -28,13 +28,13 @@ const calculateResistencia = () => {
     resultado.innerHTML = `A resistência é de ${resistencia} Ω<br>A tensão é: ${tensaoTotal} v<br>A corrente é: ${correnteTotal} A`;
 }
 
-tensaoInput.addEventListener("input", updateTensao);
-correnteInput.addEventListener("input", updateCorrente);
+tensaoInput.addEventListener("input", atualizarTensao);
+correnteInput.addEventListener("input", atualizarCorrente);
 document.getElementById("calcularResistencia").addEventListener("click", calculateResistencia);
 
 
 function calcularResistencia(){
-    
+
     var resistencia = tensaoTotal/correnteTotal
     resultado.innerHTML = `A resistência é de ${resistencia} Ω<br>A tensão é: ${tensaoTotal} v<br>A corrente é: ${correnteTotal} A`
 }
