@@ -15,12 +15,12 @@ const correnteRes = document.getElementById("correnteRes");
 
 const atualizarTensao = () => {
     tensaoTotal = parseFloat(tensaoInput.value);
-    tensaoRes.innerHTML = `A tensão é de ${tensaoTotal}`;
+    tensaoRes.innerHTML = `A tensão é de ${tensaoTotal} V`;
 }
 
 const atualizarCorrente = () => {
     correnteTotal = parseFloat(correnteInput.value);
-    correnteRes.innerHTML = `A corrente é de ${correnteTotal}`;
+    correnteRes.innerHTML = `A corrente é de ${correnteTotal} A`;
 }
 
 const calculateResistencia = () => {

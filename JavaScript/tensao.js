@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const inputCaixa = document.getElementById("inputCaixa");
 const resultado = document.getElementById("resultado");
 const voltagem = document.getElementById("voltagem");
@@ -9,7 +10,7 @@ var res = 0;
 var current = 0
 correnteResultado = 0
 
-function tensao(){
+window.tensao = function(){
     document.querySelector('.tensao').style.display = "block";
     document.querySelector('.main').style.display = "none";
 }
@@ -27,7 +28,7 @@ ohmInput.addEventListener("input", () => { //addEventListener adiciona uma funç
     }
 });
 
-function criarInput(){
+window.criarInput = function(){
     
     const numResistencias = prompt("Quantas resistências você deseja inserir?");
     const quantidade = parseInt(numResistencias);
@@ -63,9 +64,10 @@ function criarInput(){
 
 } //fecha criarinput
 
-function calcularTensao(){
+window.calcularTensao = function(){
     var voltage = parseFloat(voltageInput.value);
     var tensao = res*current;
     resultado.innerHTML = `A tensão é ${tensao} V.<br>A corrente é: ${current}A<br>A resistência equivalente é: ${res} Ω.<br>`;
     document.getElementById("CalculaNov").style.display="block"
 }
+})

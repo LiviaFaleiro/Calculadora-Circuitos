@@ -43,7 +43,7 @@ function criarInputs() {
         });
 
         totalResistance = sum;
-        somaResistor.innerHTML = `A soma das resistências é: ${sum} Ω`;
+        somaResistor.innerHTML = `A resistência equivalente é: ${sum} Ω`;
 
         voltageContainer.style.display = 'block';
 
