@@ -6,18 +6,17 @@
     <link rel="Stylesheet" type="text/css" href="style.css">
     <title>Calculo Circuito</title>
 </head>
-<body>
-    <h1 class="titulo">Calcular Circuitos</h1>
-    
+<body> 
     <section class="opcaoCircuito">
+        <h1 class="titulo">Calcular Circuitos</h1>
         <h2 class="legenda">Tipo de circuito que deseja calcular:</h2>
         <button class="opcao" id="serie" onclick="serie()">Em Série</button>
         <button class="opcao" id="paralelo" onclick="paralelo()">Paralelo(Em breve)</button>
 
     </section>
     <section class="main" style="display: none;">
+       <div class="divLegenda"><h2 class="legenda">O que deseja calcular?</h2></div>
 
-        <h2 class="legenda">O que deseja calcular?</h2>
         <button class="opcao" onclick="corrente()">I(Corrente Elétrica)</button>
         <button class="opcao" onclick="tensao()">E(Tensão elétrica)</button>
         <button class="opcao" onclick="resistencia()">R(Resistência)</button>
@@ -25,45 +24,50 @@
     </section>
 
     <section class="corrente" style="display: none;">
-
-        <h2 class="formula">Fórmula para Calcular a corrente: Corrente(R) = Tensão(E)/Resistência(I)</h2>
+        <h1 class="formulaTitulo">Corrente(I)</h1>
+        <h2 class="formula">Fórmula para Calcular a corrente:<br> Corrente(R) = Tensão(E)/Resistência(I)</h2>
         <h3 class="botaoInserir"onclick="criarInputs()" class="legenda" id="legenda".style="display:block">Inserir Quantidade de Resistores(Clique Aqui!)</h3>
-        <div id="inputContainer"></div>
+        <div class="inputContainer" id="inputContainer"></div>
         <div id="voltageContainer" style="display:none;">
-            <p id="somaResistor"></p>
+            <p class="mostra" id="somaResistor"></p>
                 <h3 id="tensaoTexto" style="display: none;" class="botaoInserir">Digite a Tensão Elétrica V/E</h3>
                 <input type="number" id="voltageInput" placeholder="Tensão (V/E)">
         </div>
         <p id="result" class="resultado"></p>
-        <button class="opcao" onclick="novamente()" id="CalculaNov" style="display: none;">Novo Cálculo</button>
-    </section>
-
+       
+    </section> <!--fim de section corrente-->
     <section class="tensao" style="display: none;">
-        <br>
-        <h2 class="formula">Fórmula para calcular a tensão: Corrente(I) * Resistência(R) </h2>
+        <h1 class="formulaTitulo">Tensão(V/E)</h1>
+        <h2 class="formula">Fórmula para calcular a tensão:<br>Corrente(I) * Resistência(R) </h2>
         <h3 class="botaoInserir">Digite a Corrente Elétrica(I)</h3>
-        <input type="number" id="ohmInput" placeholder="Corrente (I)">
-        <p id="correnteResultado"></p>
+        <input  type="number" id="ohmInput" placeholder="Corrente (I)">
+        <p id="correnteResultado" class="mostra"></p>
         <h3 class="botaoInserir" onclick="criarInput()" class="legenda" id="LegendaResistor" style="display:block">Inserir Quantidade de Resistores (Clique Aqui!)</h3>
-        <div id="inputCaixa"></div>
-        <button onclick="calcularTensao()" class="calc">Calcular</button>
+        <div class="botaoInserir" id="inputCaixa"></div>
+
+        <div class="botaoResultado">
+             <button onclick="calcularTensao()" class="calc">Calcular</button>
+    </div>
         <div id="voltagem" style="display:block;">
             <p id="soma"></p>
         </div>
+        
         <p  id="resultado" class="resultado"></p>
     </section>
 
     <section class="resistencia" style="display: none;">
-    
-        <h2 class="formula">Fórmula para calcular a resistência: Tensão(E)/Corrente(I)</h2>
+        <h1 class="formulaTitulo">Resistência(R)</h1>
+        <h2 class="formula">Fórmula para calcular a resistência:<br>Tensão(E)/Corrente(I)</h2>
         <h3 class="botaoInserir">Digite a Tensão elétrica:</h3>
         <input type="number" id="tensaoInput" placeholder="Tensão (V/E)">
-        <p id="tensaoRes"></p>
+        <p id="tensaoRes" class="mostra"></p>
         <h3 class="botaoInserir">Digite a corrente elétrica:</h3>
         <input type="number" placeholder="Corrente (I)" id="correnteInput">
-        <p id="correnteRes"></p>
-        <button onclick="calcularResistencia()" class="calc">Calcular</button>
-        <P id="resultadoResistencia"></P>
+        <p id="correnteRes" class="mostra"></p>
+        <div class="botaoResultado">
+            <button onclick="calcularResistencia()" class="calc">Calcular</button>
+        </div>
+        <P id="resultadoResistencia" class="resultado"></P>
     </section>
 
 <script src="JavaScript/corrente.js"></script>
