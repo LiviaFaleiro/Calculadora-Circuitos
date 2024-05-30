@@ -5,7 +5,7 @@
 
 //input para tensao = tensaoInput
 //input para corrente = correnteInput
-// classe de resultado = resultado
+// classe de resultado = resultado 
 
 const tensaoInput = document.getElementById("tensaoInput");
 const correnteInput = document.getElementById("correnteInput");
