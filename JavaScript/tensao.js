@@ -42,6 +42,7 @@ window.criarInput = function(){
     }
     
     function updateResistor() {
+        res = 0
         const inputs = document.querySelectorAll(".resistor-input");
         inputs.forEach(input => {
             const value = parseFloat(input.value);

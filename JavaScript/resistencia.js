@@ -36,5 +36,5 @@ document.getElementById("calcularResistencia").addEventListener("click", calcula
 function calcularResistencia(){
 
     var resistencia = tensaoTotal/correnteTotal
-    resultado.innerHTML = `A resistência é de ${resistencia} Ω<br>A tensão é: ${tensaoTotal} v<br>A corrente é: ${correnteTotal} A`
+    resultado.innerHTML = `A resistência é de ${resistencia.toFixed(2)} Ω<br>A tensão é: ${tensaoTotal} V<br>A corrente é: ${correnteTotal} A`
 }
