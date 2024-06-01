@@ -20,7 +20,9 @@ input:hover{
 }
 .botaoResultado{
     position: relative;
-    left: 34%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   
 }
 .calc{ /*botao calcular*/
