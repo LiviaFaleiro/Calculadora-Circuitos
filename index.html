@@ -14,7 +14,8 @@
         <h2 class="legenda">Tipo de circuito que deseja calcular:</h2>
         <button class="opcao" id="serie" onclick="serie()">Em Série</button>
         <button class="opcao" id="paralelo" onclick="paralelo()">Paralelo(Em breve)</button>
-
+                                
+                                <!--EM SÉRIE-->
     </section>
     <section class="main" style="display: none;">
        <div class="divLegenda"><h2 class="legenda">O que deseja calcular?</h2></div>
@@ -26,8 +27,11 @@
     </section>
     <section class="corrente" style="display: none;">
         <h1 class="formulaTitulo">Corrente(I)</h1>
+
         <h2 class="formula">Fórmula para Calcular a corrente:<br> Corrente(R) = Tensão(E)/Resistência(I)</h2>
+
         <h3 class="botaoInserir"onclick="criarInputs()" class="legenda" id="legenda".style="display:block">Inserir Quantidade de Resistores(Clique Aqui!)</h3>
+        
         <div class="inputContainer" id="inputContainer"></div>
         <div id="voltageContainer" style="display:none;">
             <p class="mostra" id="somaResistor"></p>
@@ -80,10 +84,24 @@
         <P id="resultadoResistencia" class="resultado"></P>
     </section><!--fim da seção resistencia-->
 
+                            <!--EM PARALELO-->
+    <section class="mainP" style="display: none;">
+            <div class="divLegenda"><h2 class="legenda">O que deseja calcular?</h2></div>
+     
+             <button class="opcao" onclick="correnteP()">I(Corrente Elétrica)</button>
+             <button class="opcao" onclick="tensaoP()">E(Tensão elétrica)</button>
+             <button class="opcao" onclick="resistenciaP()">R(Resistência)</button>
+             
+    </section>
+    <section class="correnteP" style="display: none;">
+        
+    </section>
+
 <script src="JavaScript_serie/corrente.js"></script>
 <script src="JavaScript_serie/resistencia.js"></script>
 <script src="JavaScript_serie/tensao.js"></script>
-<script src="JavaScript_serie/script.js"></script>
+<script src="JavaScript_Paralelo/correnteP.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

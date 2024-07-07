@@ -9,3 +9,7 @@ function serie(){
     document.querySelector('.main').style.display="block"
     document.querySelector('.opcaoCircuito').style.display="none"
 }
+function paralelo(){
+    document.querySelector('.mainP').style.display="block"
+    document.querySelector('.opcaoCircuito').style.display="none"
+}
